@@ -16,6 +16,7 @@ def generate_password(length, use_upper, use_lower, use_digits, use_special):
     if use_special:
         char_set += string.punctuation
 
+    # Ensure the password requirements
     password = []
     if use_upper:
         password.append(random.choice(string.ascii_uppercase))
@@ -28,6 +29,7 @@ def generate_password(length, use_upper, use_lower, use_digits, use_special):
 
     password += random.choices(char_set, k=length - len(password))
 
+    # Shuffle to avoid predictable patterns
     random.shuffle(password)
 
     return ''.join(password)
