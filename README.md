@@ -16,20 +16,20 @@ This project is a command-line tool designed to generate random passwords with c
 
 Run the password_generator.py script with the following command-line arguments to generate passwords:
 
--l or --length (required): Specifies the length of the password.
--u or --use_upper: Include uppercase letters in the password.
--lw or --use_lower: Include lowercase letters in the password.
--d or --use_digits: Include digits in the password.
--s or --use_special: Include special characters in the password.
+- -l or --length (required): Specifies the length of the password.
+- -u or --use_upper: Include uppercase letters in the password.
+- -lw or --use_lower: Include lowercase letters in the password.
+- -d or --use_digits: Include digits in the password.
+- -s or --use_special: Include special characters in the password.
 
-####Generate a password of length 8 with only lowercase letters and digits:
+#### Generate a password of length 8 with only lowercase letters and digits:
 
 python password_generator.py -l 8 -lw -d
 
-##Example Output
+## Example Output
 
-####When you run the command:
+#### When you run the command:
 python password_generator.py -l 12 -u -lw -d -s
 
-####You will get an output similar to:
+#### You will get an output similar to:
 Generated Password: A1b2C3d4!E5f
