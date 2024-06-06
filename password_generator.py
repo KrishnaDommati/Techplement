@@ -15,7 +15,7 @@ def generate_password(length, use_upper, use_lower, use_digits, use_special):
         char_set += string.digits
     if use_special:
         char_set += string.punctuation
-
+        
     # Ensure the password requirements
     password = []
     if use_upper:
